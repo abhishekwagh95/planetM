@@ -14,9 +14,11 @@ public class ViewHolder extends RecyclerView.ViewHolder {
 
     public ImageView imageView;
     public TextView textView;
+    public TextView rating;
     public ViewHolder(@NonNull View itemView) {
         super(itemView);
         imageView = itemView.findViewById(R.id.movie_image);
         textView = itemView.findViewById(R.id.movie_name);
+        rating = itemView.findViewById(R.id.rating);
     }
 }

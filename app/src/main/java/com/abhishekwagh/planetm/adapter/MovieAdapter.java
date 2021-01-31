@@ -44,6 +44,7 @@ public class MovieAdapter extends RecyclerView.Adapter<ViewHolder> {
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Movie movie = mList.get(position);
         holder.textView.setText(movie.getOriginal_title());
+        holder.rating.setText(movie.getVote_average().toString());
         Picasso.with(mContext)
                 .load("https://image.tmdb.org/t/p/w500" + movie.getPoster_path())
                 .into(holder.imageView);
